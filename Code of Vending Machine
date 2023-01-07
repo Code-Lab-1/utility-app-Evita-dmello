@@ -1,3 +1,5 @@
+# Code
+
 # Medicine in vending machine
 
 medicines_in_stock = [
@@ -250,3 +252,123 @@ def create_reciept(the_medicine, reciept):
 
 if __name__ == "__main__": 
     machine(medicines_in_stock, run,the_medicine)
+    
+# Output 
+
+With receipt - 
+
+Welcome to Medicines Vending Machine
+------- Vending Machine with Python-------
+
+
+----------The Medicines In Stock Are----------
+
+
+Medicine No: 0 - Medicine Name: Panadol Extra – 24 tablets - Medicine Price: 20
+Medicine No: 1 - Medicine Name: Panadol Advance – 24 tablets - Medicine Price: 15
+Medicine No: 2 - Medicine Name: Imodium - Medicine Price: 20
+Medicine No: 3 - Medicine Name: Adol Extra – 24 tablets - Medicine Price: 10
+Medicine No: 4 - Medicine Name: Adol– 24 tablets - Medicine Price: 10
+Medicine No: 5 - Medicine Name: Chloraseptic – Sore throat - Medicine Price: 20
+Medicine No: 6 - Medicine Name: Chloraseptic Max – Sore throat – Fast Acting Relief - Medicine Price: 20
+Medicine No: 7 - Medicine Name: Strepsils – Honey & Lemon - Medicine Price: 20
+Medicine No: 8 - Medicine Name: Strepsils – Sugar Free - Medicine Price: 20
+Medicine No: 9 - Medicine Name: Vitamin C - Medicine Price: 10
+Medicine No: 10 - Medicine Name: O.R.S – Hydration Tablets – Lemon Flavour - Medicine Price: 20
+Medicine No: 11 - Medicine Name: O.R.S – Hydration Tablets – Orange Flavour - Medicine Price: 35
+Medicine No: 12 - Medicine Name: Fess Original – Nasal Spray - Medicine Price: 20
+Medicine No: 13 - Medicine Name: Clear Eyes – Eye Drop – Natural Tears - Medicine Price: 20
+Medicine No: 14 - Medicine Name: Clear Eyes – Eye Drop – Redness Relief - Medicine Price: 20
+Medicine No: 15 - Medicine Name: Deep Heat Rub - Medicine Price: 10
+Medicine No: 16 - Medicine Name: Voltaren - Medicine Price: 35
+Medicine No: 17 - Medicine Name: Nexcare - Medicine Price: 10
+Medicine No: 18 - Medicine Name: Wrist Wrap - Medicine Price: 15
+Medicine No: 19 - Medicine Name: Heel Cushion - Medicine Price: 30
+Medicine No: 20 - Medicine Name: Anklet - Medicine Price: 30
+Medicine No: 21 - Medicine Name: Vicco Vajradanti - Medicine Price: 10
+Medicine No: 22 - Medicine Name: Vicco WSO Cream - Medicine Price: 10
+Medicine No: 23 - Medicine Name: Dettol - Medicine Price: 10
+Medicine No: 24 - Medicine Name: Kids 0-9 years – Day Syrup - Medicine Price: 20
+Medicine No: 25 - Medicine Name: Kids 0-9 years – All allergies - Medicine Price: 20
+Medicine No: 26 - Medicine Name: Panadol Syrup - Medicine Price: 20
+Medicine No: 27 - Medicine Name: Adol Syrup - Medicine Price: 20
+Medicine No: 28 - Medicine Name: Kofol Cough Syrup - Medicine Price: 20
+Medicine No: 29 - Medicine Name: MuCuM – 20 Tablets - Medicine Price: 20
+
+
+Enter the medicine no of the medicine you want to buy: 2
+press any key to add more medicines and press q to quit.. s
+
+
+Enter the medicine no of the medicine you want to buy: 6
+press any key to add more medicines and press q to quit.. a
+
+
+Enter the medicine no of the medicine you want to buy: 3
+press any key to add more medicines and press q to quit.. q
+1. print the reciept? 2. only print the total sum .. 1
+
+		PRODUCT -- PRICE 
+
+        	Imodium -- 20
+        
+        	Chloraseptic Max – Sore throat – Fast Acting Relief -- 20
+        
+        	Adol Extra – 24 tablets -- 10
+        
+        	Total --- 50  
+            
+# Without receipt
+
+Welcome to Medicines Vending Machine
+------- Vending Machine with Python-------
+
+
+----------The Medicines In Stock Are----------
+
+
+Medicine No: 0 - Medicine Name: Panadol Extra – 24 tablets - Medicine Price: 20
+Medicine No: 1 - Medicine Name: Panadol Advance – 24 tablets - Medicine Price: 15
+Medicine No: 2 - Medicine Name: Imodium - Medicine Price: 20
+Medicine No: 3 - Medicine Name: Adol Extra – 24 tablets - Medicine Price: 10
+Medicine No: 4 - Medicine Name: Adol– 24 tablets - Medicine Price: 10
+Medicine No: 5 - Medicine Name: Chloraseptic – Sore throat - Medicine Price: 20
+Medicine No: 6 - Medicine Name: Chloraseptic Max – Sore throat – Fast Acting Relief - Medicine Price: 20
+Medicine No: 7 - Medicine Name: Strepsils – Honey & Lemon - Medicine Price: 20
+Medicine No: 8 - Medicine Name: Strepsils – Sugar Free - Medicine Price: 20
+Medicine No: 9 - Medicine Name: Vitamin C - Medicine Price: 10
+Medicine No: 10 - Medicine Name: O.R.S – Hydration Tablets – Lemon Flavour - Medicine Price: 20
+Medicine No: 11 - Medicine Name: O.R.S – Hydration Tablets – Orange Flavour - Medicine Price: 35
+Medicine No: 12 - Medicine Name: Fess Original – Nasal Spray - Medicine Price: 20
+Medicine No: 13 - Medicine Name: Clear Eyes – Eye Drop – Natural Tears - Medicine Price: 20
+Medicine No: 14 - Medicine Name: Clear Eyes – Eye Drop – Redness Relief - Medicine Price: 20
+Medicine No: 15 - Medicine Name: Deep Heat Rub - Medicine Price: 10
+Medicine No: 16 - Medicine Name: Voltaren - Medicine Price: 35
+Medicine No: 17 - Medicine Name: Nexcare - Medicine Price: 10
+Medicine No: 18 - Medicine Name: Wrist Wrap - Medicine Price: 15
+Medicine No: 19 - Medicine Name: Heel Cushion - Medicine Price: 30
+Medicine No: 20 - Medicine Name: Anklet - Medicine Price: 30
+Medicine No: 21 - Medicine Name: Vicco Vajradanti - Medicine Price: 10
+Medicine No: 22 - Medicine Name: Vicco WSO Cream - Medicine Price: 10
+Medicine No: 23 - Medicine Name: Dettol - Medicine Price: 10
+Medicine No: 24 - Medicine Name: Kids 0-9 years – Day Syrup - Medicine Price: 20
+Medicine No: 25 - Medicine Name: Kids 0-9 years – All allergies - Medicine Price: 20
+Medicine No: 26 - Medicine Name: Panadol Syrup - Medicine Price: 20
+Medicine No: 27 - Medicine Name: Adol Syrup - Medicine Price: 20
+Medicine No: 28 - Medicine Name: Kofol Cough Syrup - Medicine Price: 20
+Medicine No: 29 - Medicine Name: MuCuM – 20 Tablets - Medicine Price: 20
+
+
+Enter the medicine no of the medicine you want to buy: 7
+press any key to add more medicines and press q to quit.. s
+
+
+Enter the medicine no of the medicine you want to buy: 0
+press any key to add more medicines and press q to quit.. w
+
+
+Enter the medicine no of the medicine you want to buy: 29
+press any key to add more medicines and press q to quit.. q
+1. print the reciept? 2. only print the total sum .. 2
+60
+    
