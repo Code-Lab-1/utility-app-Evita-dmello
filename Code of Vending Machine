@@ -1,0 +1,252 @@
+# Medicine in vending machine
+
+medicines_in_stock = [
+    {
+     "medicine_no" : 0, 
+     "medicine_name" : "Panadol Extra – 24 tablets",
+     'medicine_price' : 20,
+    },
+    
+    {
+     "medicine_no" : 1,
+     "medicine_name" : "Panadol Advance – 24 tablets",
+     'medicine_price' : 15,
+    },
+
+    {
+     "medicine_no" : 2, 
+     "medicine_name" : "Imodium", 
+     'medicine_price' : 20,
+    },
+
+    {
+     "medicine_no" : 3,
+     "medicine_name" : "Adol Extra – 24 tablets",
+     'medicine_price' : 10,
+    },
+
+    {
+     "medicine_no" : 4,
+     "medicine_name" : "Adol– 24 tablets",
+     'medicine_price' : 10,
+    },
+
+    {
+     "medicine_no" : 5, 
+     "medicine_name" : "Chloraseptic – Sore throat",
+     'medicine_price' : 20,
+    },
+
+    {
+     "medicine_no" : 6, 
+     "medicine_name" : "Chloraseptic Max – Sore throat – Fast Acting Relief",
+     'medicine_price' : 20,
+    },
+
+    {
+     "medicine_no" : 7,
+     "medicine_name" : "Strepsils – Honey & Lemon",
+     'medicine_price' : 20,
+    },
+
+    {
+     "medicine_no" : 8, 
+     "medicine_name" : "Strepsils – Sugar Free",
+     'medicine_price' : 20,
+    },
+
+    {
+     "medicine_no" : 9,
+     "medicine_name" : "Vitamin C",
+     'medicine_price' : 10,
+    },
+
+    {
+     "medicine_no" : 10,
+     "medicine_name" : "O.R.S – Hydration Tablets – Lemon Flavour",
+     'medicine_price' : 20,
+    },
+    
+    {
+     "medicine_no" : 11,
+     "medicine_name" : "O.R.S – Hydration Tablets – Orange Flavour",
+     'medicine_price' : 35,
+    },
+
+    {
+     "medicine_no" : 12,
+     "medicine_name" : "Fess Original – Nasal Spray",
+     'medicine_price' : 20,
+    },
+
+    {
+     "medicine_no" : 13,
+     "medicine_name" : "Clear Eyes – Eye Drop – Natural Tears",
+     'medicine_price' : 20,
+    },
+    
+    {
+     "medicine_no" : 14,
+     "medicine_name" : "Clear Eyes – Eye Drop – Redness Relief",
+     'medicine_price' : 20,
+    },
+
+    {
+     "medicine_no" : 15,
+     "medicine_name" : "Deep Heat Rub",
+     'medicine_price' : 10,
+    },
+    
+    {
+     "medicine_no" : 16,
+     "medicine_name" : "Voltaren",
+     'medicine_price' : 35,
+    },
+    
+    {
+     "medicine_no" : 17,
+     "medicine_name" : "Nexcare",
+     'medicine_price' : 10,
+    },
+    
+    {
+     "medicine_no" : 18,
+     "medicine_name" : "Wrist Wrap",
+     'medicine_price' : 15,
+    },
+
+    {
+     "medicine_no" : 19,
+     "medicine_name" : "Heel Cushion",
+     'medicine_price' : 30,
+    },
+    
+    {
+     "medicine_no" : 20,
+     "medicine_name" : "Anklet",
+     'medicine_price' : 30,
+    },
+    
+    {
+     "medicine_no" : 21,
+     "medicine_name" : "Vicco Vajradanti",
+     'medicine_price' : 10,
+    },
+    
+    {
+     "medicine_no" : 22,
+     "medicine_name" : "Vicco WSO Cream",
+     'medicine_price' : 10,
+    },
+    
+    {
+     "medicine_no" : 23,
+     "medicine_name" : "Dettol",
+     'medicine_price' : 10,
+    },
+    
+    {
+     "medicine_no" : 24,
+     "medicine_name" : "Kids 0-9 years – Day Syrup", 
+     'medicine_price' : 20,
+    },
+    
+    {
+     "medicine_no" : 25,
+     "medicine_name" : "Kids 0-9 years – All allergies", 
+     'medicine_price' : 20,
+    },
+    
+    {
+     "medicine_no" : 26,
+     "medicine_name" : "Panadol Syrup", 
+     'medicine_price' : 20,
+    },
+    
+    {
+     "medicine_no" : 27,
+     "medicine_name" : "Adol Syrup", 
+     'medicine_price' : 20,
+    },
+    
+    {
+     "medicine_no" : 28,
+     "medicine_name" : "Kofol Cough Syrup", 
+     'medicine_price' : 20,
+    },
+    
+    {
+     "medicine_no" : 29,
+     "medicine_name" : "MuCuM – 20 Tablets", 
+     'medicine_price' : 20,
+    },
+]  
+the_medicine = []
+
+reciept = """
+\t\tPRODUCT -- PRICE 
+"""
+
+sum = 0
+
+run = True
+
+#Printing the medicine in vending machine
+
+print("Welcome to Medicines Vending Machine")
+print("------- Vending Machine with Python-------\n\n")
+print("----------The Medicines In Stock Are----------\n\n")
+
+for i in medicines_in_stock:
+    print(f"Medicine No: {i['medicine_no']} - Medicine Name: {i['medicine_name']} - Medicine Price: {i['medicine_price']}")
+
+
+def machine(medicines_in_stock, run, the_medicine):
+    while run:
+
+        buy_medicine = int(input("\n\nEnter the medicine no of the medicine you want to buy: "))
+
+        if buy_medicine < len(medicines_in_stock):
+            the_medicine.append(medicines_in_stock[buy_medicine])
+        else:
+            print("THE PRODUCT ID IS WRONG!")
+
+        more_medicines = str(input("press any key to add more medicines and press q to quit.. "))
+
+        if more_medicines == "q":
+            run = False
+
+    rec_bool = int(input(("1. print the reciept? 2. only print the total sum .. ")))
+    if rec_bool == 1:
+        print(create_reciept(the_medicine, reciept))
+    elif rec_bool == 2:
+        print(sum(the_medicine))
+    else:
+        print("INVALID ENTRY")
+
+
+def sum(the_medicine):
+    sum = 0
+
+    for i in the_medicine:
+        sum += i["medicine_price"]
+
+    return sum
+
+def create_reciept(the_medicine, reciept):
+
+    for i in the_medicine:
+        reciept += f"""
+        \t{i["medicine_name"]} -- {i['medicine_price']}
+        """
+
+    reciept += f"""
+        \tTotal --- {sum(the_medicine)}
+        
+        
+        """
+    return reciept
+
+
+if __name__ == "__main__": 
+    machine(medicines_in_stock, run,the_medicine)
